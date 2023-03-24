@@ -8,8 +8,8 @@ const refreshToken_secret = process.env.REFRESHTOKEN_KEY;
 let cookieOption = {
   httpOnly: false,
   expires: new Date(Date.now() + 30000000),
-  secure:true,
-  sameSite:"none"
+//   secure:true,
+//   sameSite:"none"
 };
 
 const app = express.Router();
