@@ -7,17 +7,17 @@ const userRoute = require("./routes/auth");
 const postRoute = require("./routes/post.route");
 const cookieParser = require("cookie-parser");
 
-let corsConfig = {
-  origin: "http://localhost:3000",
-  allowedHeaders: ["Content-Type", "Authorization", "x-csrf-token"],
-  credentials: true,
-  exposedHeaders: ["*", "Authorization"],
-};
-
 // let corsConfig = {
 //   origin: "http://localhost:3000",
+//   allowedHeaders: ["Content-Type", "Authorization", "x-csrf-token"],
 //   credentials: true,
+//   exposedHeaders: ["*", "Authorization"],
 // };
+
+let corsConfig = {
+  origin: "http://localhost:3000",
+  credentials: true,
+};
 
 const app = express();
 app.use(cors(corsConfig));
