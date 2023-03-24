@@ -15,7 +15,8 @@ const cookieParser = require("cookie-parser");
 // };
 
 let corsConfig = {
-  origin: "https://papaya-boba-2dfefb.netlify.app",
+//   origin: "https://papaya-boba-2dfefb.netlify.app",
+origin:"http://localhost:3000",
   credentials: true,
 };
 
