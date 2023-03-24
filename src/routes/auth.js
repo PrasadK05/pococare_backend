@@ -8,8 +8,8 @@ const refreshToken_secret = process.env.REFRESHTOKEN_KEY;
 let cookieOption = {
   httpOnly: true,
   expires: new Date(Date.now() + 30000000),
-//   origin:"https://papaya-boba-2dfefb.netlify.app",
-  origin:"http://localhost:3000",
+  origin:"https://papaya-boba-2dfefb.netlify.app",
+//   origin:"http://localhost:3000",
   secure:true,
   sameSite:"none"
 };
